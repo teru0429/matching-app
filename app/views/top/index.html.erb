@@ -1,14 +1,35 @@
+<%= render "shared/header" %>
 <div class="topPage">
-  <div class="container">
-    <div class="topPage_contents">
-      <h1 class="topPage_contents_title1">近畿限定!
-        <p class="topPage_contents_title2">恋活・婚活</p>
-        <p class="topPage_contents_title3">マッチングアプリ</p>
-      </h1>
-    </div>
+  <div class="topPage_contents">
+    <h1 class="topPage_contents_title1">近畿限定!
+      <p class="topPage_contents_title2">恋活・婚活</p>
+      <p class="topPage_contents_title3">マッチングアプリ</p>
+    </h1>
     <div class="login_contents">
-      <%= link_to "無料で新規登録", "#", class: "sign_up_btn" %>
-      <%= link_to "メールアドレスでログイン", "#", class: "login_btn" %>
+      <%= link_to "無料で新規登録", "#", class: "sign_btn sign_btn-gradient" %>
+      <p class="caution">※高校生を除く、満18歳以上の独身者向けサービスです。</p>
+      <%= link_to "メールアドレスでログイン", "#", class: "login_btn login_btn-gradient" %>
     </div>
   </div>
+  <div class="supports">
+    <p class="support">簡単ステップ</p>
+      <div class="sutep">
+        <div class="support1">
+          <p class="image1">サンプル</p>
+          <p class="support1-1">理想の相手を探そう！</p>
+          <p class="support1-2">検索条件設定やコミュニティ機能を活用して理想のお相手を探しましょう。年齢、居住地、身長、趣味、様々な項目から、あなたに合ったお相手を探すことができます。</p>
+        </div>
+        <div class="support2">
+          <p class="image2">サンプル</p>
+          <p class="support2-1">気になる相手にいいねをしよう！</p>
+          <p class="support2-2">気になるお相手を見つけたら、いいね！ボタンで「いいね！」を送りましょう。</p>
+        </div>
+        <div class="support3">
+          <p class="image3">サンプル</p>
+          <p class="support3-1">マッチング後メッセージでやりとりしよう！</p>
+          <p class="support3-2">お相手から、「いいね！ありがとう」が送られてきたらマッチング！その後、メッセージの交換ができるようになります。</p>
+        </div>
+      </div>
+  </div>
 </div>
+<%= render "shared/second-footer" %>
