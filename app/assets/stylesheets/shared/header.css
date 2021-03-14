@@ -1,0 +1,21 @@
+.title-logo {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+}
+.category-list {
+  width: 100%;
+  padding: 3vh 3vw;
+  display: flex;
+  background-color: #272727;
+  overflow: scroll;
+  white-space:nowrap;
+}
+.border-list {
+  width: 20%;
+  text-decoration: none;
+  margin-right: 3vw;
+  color: white;
+}
+
+
