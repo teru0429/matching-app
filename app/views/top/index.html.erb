@@ -6,9 +6,9 @@
       <p class="topPage_contents_title3">マッチングアプリ</p>
     </h1>
     <div class="login_contents">
-      <%= link_to "無料で新規登録", "#", class: "sign_btn sign_btn-gradient" %>
+      <%= link_to "無料で新規登録", new_user_registration_path, class: "sign_btn sign_btn-gradient" %>
       <p class="caution">※高校生を除く、満18歳以上の独身者向けサービスです。</p>
-      <%= link_to "メールアドレスでログイン", "#", class: "login_btn login_btn-gradient" %>
+      <%= link_to "メールアドレスでログイン", new_user_session_path, class: "login_btn login_btn-gradient" %>
     </div>
   </div>
   <div class="supports">

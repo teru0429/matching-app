@@ -30,15 +30,40 @@
 
 ## データベース設計
 
-<!-- ## users テーブル
+## users テーブル
 
-| Column     | Type   | Options     |
-| ---------- | ------ | ----------- |
-| email      | string | null: false |
-| password   | string | null: false |
-| nickname   | string | null: false |
+| Column             | Type     | Options     |
+| ------------------ | -------- | ----------- |
+| email              | string   | null: false |  <!--メールアドレス-->
+| password           | string   | null: false |  <!--パスワード-->
+| nickname           | string   | null: false |  <!--ニックネーム-->
+| introduce          | string   | null: false |  <!--自己紹介文-->
+| age                | tinytext | null: false |  <!--年齢-->
+| bloodtype          | integer  | null: false |  <!--血液型-->
+| sex                | integer  | null: false |  <!--性別-->
+| brother            | integer  | null: false |  <!--兄弟・姉妹-->
+| address            | string   | null: false |  <!--住所-->
+| details            | string   | null: false |  <!--詳細地-->
+| educational        | integer  | null: false |  <!--学歴-->
+| occupation         | string   | null: false |  <!--職種-->
+| height             | string   | null: false |  <!--身長-->
+| bodyshape          | integer  | null: false |  <!--体型-->
+| marriage           | integer  | null: false |  <!--結婚歴-->
+| children           | integer  | null: false |  <!--子供の有無-->
+| willingnesstomarry | integer  | null: false |  <!--血行に対する意思-->
+| kids               | integer  | null: false |  <!--子供が欲しいか--> 
+| housework          | integer  | null: false |  <!--家事・育児-->
+| encounter          | integer  | null: false |  <!--出会うまでの希望-->
+| date               | integer  | null: false |  <!--デート費-->
+| personality        | integer  | null: false |  <!--性格-->
+| sociability        | integer  | null: false |  <!--社交性-->
+| housemate          | integer  | null: false |  <!--同居人-->
+| holiday            | integer  | null: false |  <!--休日-->
+| liquor             | integer  | null: false |  <!--お酒-->
+| tobacco            | integer  | null: false |  <!--タバコ-->
+| hobby              | string   | null: false |  <!--趣味-->
 
-### Association
+<!-- ### Association
 
 - has_many :tweets
 - has_many :comments
